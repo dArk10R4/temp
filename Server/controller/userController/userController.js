@@ -11,20 +11,22 @@ const createUser = async (req, res) => {
     await user.save()
     const token = await user.generateAuthToken()
 
-    axios.post(awsEmailResisterUrl, {
-      InstructorEmail: user.email
-    })
-    .then(res => {
-          console.log('email resistered: ' + res)
-          User.findOneAndUpdate({code: user.code}, { isEmailRegistered: true }).exec()
-        })
-    .catch(err => {
-          console.log("can't resister email: " + err)
-          User.findOneAndUpdate({code: user.code}, { isEmailRegistered: false }).exec()
-        })
+    // axios.post(awsEmailResisterUrl, {
+    //   InstructorEmail: user.email
+    // })
+    // .then(res => {
+    //       console.log('email resistered: ' + res)
+    //       User.findOneAndUpdate({code: user.code}, { isEmailRegistered: true }).exec()
+    //     })
+    // .catch(err => {
+    //       console.log("can't resister email: " + err)
+    //       User.findOneAndUpdate({code: user.code}, { isEmailRegistered: false }).exec()
+    //     })
+    
 
     res.status(201).send({ user, token })
   } catch (e) {
+    console.log(e)
     res.status(400).send(e)
   }
 }

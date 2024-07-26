@@ -1,3 +1,4 @@
+require('dotenv').config();
 const express = require('express')
 const db = require('./config/database')
 const path = require('path')
@@ -27,14 +28,14 @@ const auth = require('./middleware/auth')
 
 const fileUpload = require('express-fileupload')
 
-app.use(
-  fileUpload({
-    debug: true,
-    createParentPath: true,
-    safeFileNames: true,
-    preserveExtension: 4
-  })
-)
+// app.use(
+//   fileUpload({
+//     debug: true,
+//     createParentPath: true,
+//     safeFileNames: true,
+//     preserveExtension: 4
+//   })
+// )
 
 mongoose
   .connect(process.env.MONGODB_ATLAS_URI, {

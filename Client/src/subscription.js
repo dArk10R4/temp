@@ -17,7 +17,7 @@ function urlBase64ToUint8Array(base64String) {
   return outputArray
 }
 
-const publicVapidKey=urlBase64ToUint8Array("");
+const publicVapidKey=urlBase64ToUint8Array("BLRVOQeVa-d2rW9KFLHI52IPhkLpViSNDhB0NuOGLtI8T21JmWTaiGVLa1x_lgSbHaxNgz1l257ilb5ypp-fZ8g");
 
 function sendSubscription(subscription) {
     console.log(subscription);

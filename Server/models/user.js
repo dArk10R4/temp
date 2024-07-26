@@ -81,12 +81,12 @@ const userSchema = new mongoose.Schema({
   },
   mobile: {
     type: String,
-    validate: {
-      validator: function (v) {
-        return /\d{3}-\d{3}-\d{4}/.test(v)
-      },
-      message: (props) => `${props.value} is not a valid phone number!`
-    },
+    // validate: {
+    //   validator: function (v) {
+    //     return /\d{3}-\d{3}-\d{4}/.test(v)
+    //   },
+    //   message: (props) => `${props.value} is not a valid phone number!`
+    // },
     required: [true, 'User phone number required']
   },
   invalidatedTokens: [String],
@@ -170,7 +170,7 @@ userSchema.methods.toJSON = function () {
     passwordConfirm: undefined
   }
 }
-
+ 
 userSchema.methods.generateAuthToken = async function () {
   const user = this
   const token = jwt.sign({ _id: user._id.toString() }, process.env.SECRET_KEY, {
