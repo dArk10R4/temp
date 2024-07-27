@@ -17,6 +17,7 @@ import Login from '../pages/Login'
 import NotFoundPage from '../pages/NotFoundPage'
 import Registeration from '../pages/Registeration'
 import ForgetPassword from '../pages/ForgetPassword'
+import ResetPassword from '../pages/ResetPassword'
 import Courses from '../views/courses'
 import Articles from '../views/articles'
 import MyArticle from '../views/articles/myArticles/myArticles'
@@ -47,15 +48,22 @@ import CourseSettings from '../views/courseSettings'
 import Achievements from '../views/achievements'
 import CourseRoute from '../components/CourseRoute'
 import Archives from '../views/archives'
+import About from '../components/About/About.jsx'
+import MainPage from '../components/MainPaje/Main.jsx'
+import Compaign from '../pages/Compaign/index.jsx'
 
 // public routes redirects to /app if authenticated
 // private routes redirects to login if not authenticated
 const App = () => {
+  console.log(Compaign, "is the compaign")
   return (
     <Switch>
       <Route path="/Register" component={Registeration} />
       <PublicRoute path="/ForgetPassword" component={ForgetPassword} />
+      <PublicRoute path="/reset-password/:token" component={ResetPassword} />
       <PublicRoute path="/Login" component={Login} />
+      <Route path="/about" component={About} />
+      <Route path="/home" component={MainPage} />
 
       <PrivateRoute path="/app" component={AuthnticatedApp} />
       {/* future landing page redirect to app for now */}
@@ -117,6 +125,7 @@ const AuthnticatedApp = () => {
               path="/app/course/:courseId/modules"
               component={Modules}
             />
+            <Route path="/app/compaign" component={Compaign} />
 
             <CourseRoute
               path="/app/course/:courseId/assessment/:assessmentId/submissions"

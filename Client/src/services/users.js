@@ -8,6 +8,11 @@ const register = async (credentials) =>{
   return response.data 
 }
 
+const forgotPassword = async (email) =>{
+  const response = await axios.post(`${baseURL}/recover` ,{email} ) ;
+  return response.data 
+}
+
 const login = async (credentials) => {
   const response = await axios.post(`${baseURL}/login`, credentials)
   return response.data
@@ -32,5 +37,15 @@ const update = async (user) => {
   return response.data
 }
 
-const usersService = { register, login, logout, update }
+const reset = async (token) => {
+  const response = await axios.get(`${baseURL}/reset/${token}`)
+  return response.data
+}
+
+const changePassword = async (token, password) => {
+  const response = await axios.post(`${baseURL}/reset/${token}`, { password })
+  return response.data
+}
+
+const usersService = { register, login, logout, update, forgotPassword, reset, changePassword }
 export default usersService

@@ -1,0 +1,139 @@
+.txt{
+    font-size: 3vw; /* Font size relative to viewport width */
+    line-height: 4vw;
+    font-family: 'Krona One', sans-serif;
+    text-align: center;
+    margin-top: 40px;
+}
+
+.middle{
+    max-width: 1920px;
+    margin-left: 20px;
+    margin-right: 20px;
+   
+}
+/* 6012fd171274069.646c6a5326645 1 */
+/* Styles for the parent div with background image */
+.parent-div {
+    position: relative; /* Required for absolute positioning of child elements */
+  width: 100%; /* Full width of the container or viewport */
+  aspect-ratio: 1920 / 975; /* Aspect ratio of the parent div (1920:975) */
+    background: url('https://s3-alpha-sig.figma.com/img/0cdc/48f1/952dbac4b9c7dbb48e895dfd772dd6e3?Expires=1722816000&Key-Pair-Id=APKAQ4GOSFWCVNEHN3O4&Signature=F28gh27YdLUX3KFPsMELAiKC5VS~wg6srD-MCeY7r4u3RKtL8Ctg8WYUxa7lIRIKmsHmAY30d9EVOicAwbfwcitiZJ56mkR0c0~wzjTTVTFBqVWhW-8J4FzXjsEEpO~LksDfgWFB-F-DWp1zy4uyfoMHh2OOdTM5Qmgvm1h2YtIIwDI~31Mza-yxvm8O3oh56WiIBIl2tUcQUl3RuXkVH7NKVIEuEVOlMjg~-bcsoaMB39y-3y~rDVNp~eRSC9w18Wg1EwLvBJhsD~waJ9wh04Ww6Y2knTSkONTf~oF66SwUOd~CoMzIyFt181cAK9X9xbpRLLXf8oFhtn0v0bi1AA__') no-repeat center center;
+    background-size: cover; /* Ensure the image covers the entire div */
+    border-radius: 81px; /* Optional rounded corners */
+    overflow: hidden; /* Hide any overflow content */
+    display: flex; /* Use flexbox for layout */
+    align-items: center; /* Center items vertically */
+    justify-content: flex-start; /* Align items to the start (left) */
+    padding: 20px; /* Optional padding around content */
+    align-items: center; /* Center items vertically */
+    padding: 2vw; /* Responsive padding based on viewport width */
+  }
+  
+  .text-container {
+    display: flex;
+    flex-direction: column; /* Arrange text and button vertically */
+    justify-content: center; /* Center text and button vertically within the container */
+    align-items: flex-start; /* Align items to the start (left) */
+    color: #000000; /* Text color */
+    font-family: 'Krona One', sans-serif;
+    font-style: normal;
+    font-weight: 400;
+    max-width: 50%; /* Limit width to prevent overflow */
+  }
+  
+  /* Styles for the text itself */
+  .text {
+    font-size: 3vw; /* Font size relative to viewport width */
+    line-height: 4vw; /* Line height relative to viewport width */
+    margin-bottom: 2vw; /* Space between text and button */
+    white-space: nowrap; /* Prevent text from wrapping to a new line */
+    overflow: hidden; /* Hide any overflow content */
+    text-overflow: ellipsis; /* Add ellipsis if text overflows */
+  }
+  
+  /* Styles for the rectangle background */
+  .rectangle-background {
+    background: rgba(34, 91, 240, 0.93); /* Rectangle background color */
+    border-radius: 65px;
+    display: flex; /* Use flexbox to center the button */
+    align-items: center; /* Center vertically */
+    justify-content: center; /* Center horizontally */
+    padding: 1vw 2vw; /* Responsive padding based on viewport width */
+    margin-top: 2vw; /* Space above the rectangle */
+  }
+
+ 
+  /* Styles for the learn more button inside the rectangle */
+  .learn-more-button {
+    font-family: 'Krona One', sans-serif;
+    font-style: normal;
+    font-weight: 400;
+    font-size: 1.5vw; /* Font size relative to viewport width */
+    line-height: 2vw; /* Line height relative to viewport width */
+    color: #FFFFFF; /* Button text color */
+    background: transparent; /* No additional background for the button */
+    border: none;
+    border-radius: 65px;
+    cursor: pointer;
+  }
+
+  .menshe{
+    font-size: 2vw;
+    font-style:normal
+    
+  }
+  /* Styles for the parent container */
+.parent-container {
+    display: grid; /* Use grid layout */
+    grid-template-columns: repeat(3, 1fr); /* Three equal-width columns */
+    gap: 20px; /* Space between grid items */
+    padding: 60px; /* Padding around the container */
+    max-width: 100%; /* Ensure it does not overflow its parent */
+  }
+  
+  /* Styles for each child div */
+  .child-div {
+    background: linear-gradient(to bottom, #1E57EF, #FBB0D8    ); /* Background color for visibility */
+    border: 1px solid #ccc; /* Border for visibility */
+    padding: 20px; /* Padding inside each div */
+    border-radius: 68px; /* Optional rounded corners */
+    display: flex; /* Use flexbox */
+    flex-direction: column; /* Arrange children vertically */
+    justify-content: center; /* Center items vertically */
+    align-items: center; /* Center items horizontally */
+    text-align: center; /* Center text horizontally */
+  color: white;
+  font-family: 'Krona One', sans-serif;
+  aspect-ratio: 386 /508;
+  }
+  .child-div h3 {
+    margin: 0 0 10px 0; /* Margin at the bottom of the heading */
+    font-size: 2vw; /* Adjust font size */
+  }
+  
+  /* Styles for the text content */
+  .child-div p {
+    
+    margin: 0; /* Remove default margin */
+    margin-top: 20px;
+    font-size: 1.5vw; /* Adjust font size */
+  }
+
+
+
+  .child-div-2{
+    background: linear-gradient(to bottom, #2362F0, #A8E4FF    ); /* Background color for visibility */
+    border: 1px solid #ccc; /* Border for visibility */
+    padding: 20px; /* Padding inside each div */
+    height: 20vw;
+    border-radius: 68px; /* Optional rounded corners */
+    display: flex; /* Use flexbox */
+    flex-direction: column; /* Arrange children vertically */
+    justify-content: center; /* Center items vertically */
+    align-items: center; /* Center items horizontally */
+    text-align: center; /* Center text horizontally */
+  color: white;
+  font-family: 'Krona One', sans-serif;
+  font-size: 3vw;
+  }

@@ -57,8 +57,11 @@ const Logo = ({ collapsed }) => {
           <text
             className="logo2-cls-3"
             transform="translate(70.82 122.47) scale(1.24 1)"
+            style={{
+              fontSize: '63px',
+            }}
           >
-            Edu-Hub
+            SecurePhishing
           </text>
         </svg>
       </LogoContainer2>
@@ -104,8 +107,10 @@ const Logo = ({ collapsed }) => {
           d="M538.77,358.66a10.19,10.19,0,0,0,3.72-11c-1.78-7.33-27.13-56.23-27.13-56.23s-9.09-9.2-25.57-7.47-208.6-1.26-208.6-1.26-22,7.19-23.93,23.64l4.51,53.79Z"
           transform="translate(-236.15 -282.24)"
         />
-        <text className="logo1-cls-4" transform="translate(377.2 139.42)">
-          Edu-Hub
+        <text className="logo1-cls-4" style={{
+          fontSize: '63px',
+        }} transform="translate(377.2 139.42)">
+          SecurePhishing
         </text>
         <line
           className="logo1-cls-5"

@@ -89,7 +89,7 @@ const Login = () => {
               <Form.Item name="remember" valuePropName="checked" noStyle>
                 <Checkbox>Remember me</Checkbox>
               </Form.Item>
-              {/* <Link to="/ForgetPassword">Forget Password</Link> */}
+              <Link to="/ForgetPassword">Forget Password</Link>
             </FormItemFlex>
 
             <Form.Item>
@@ -98,9 +98,9 @@ const Login = () => {
               </Button>
             </Form.Item>
 
-            {/* <Divider plain>Or</Divider>
+            <Divider plain>Or</Divider>
 
-            <Form.Item>
+            {/* <Form.Item>
               <Button block icon={<GoogleOutlined />}>
                 Sign in with Google
               </Button>

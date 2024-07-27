@@ -1,0 +1,98 @@
+/* Styles for the parent container */
+.container {
+    display: flex; /* Use flexbox for layout */
+    align-items: center; /* Vertically center the items */
+    justify-content: space-between; /* Distribute space between the items */
+    padding: 20px; /* Padding around the container */
+    background-color: #f0f0f0; /* Background color for visibility */
+    border-radius: 8px; /* Optional rounded corners */
+    max-width: 100%; /* Ensure it does not overflow its parent */
+    font-family: "Krona One", sans-serif;
+    font-size: 1.7vw;
+  }
+  
+  /* Styles for the text div */
+  .text-div {
+    flex: 1; /* Allow it to grow and shrink */
+    padding: 20px; /* Padding inside the text div */
+  }
+  
+  /* Styles for the image div */
+  .image-div {
+    flex: 1; /* Allow it to grow and shrink */
+    display: flex; /* Use flexbox to center the image */
+    justify-content: center; /* Horizontally center the image */
+    align-items: center; /* Vertically center the image */
+  }
+  
+  /* Styles for the image */
+  .image-div img {
+    max-width: 100%; /* Ensure the image fits within its container */
+    height: auto; /* Maintain aspect ratio */
+    border-radius: 8px; /* Optional rounded corners for the image */
+  }
+  /* Styles for the main container */
+.main-container {
+    margin: 20px; /* Margin around the main container */
+    background: linear-gradient(to bottom, #3E73F3, #C9D0F9    );
+    border-radius: 20px;
+    padding: 20px;
+  }
+  
+  /* Styles for the title section */
+  .title-section {
+    margin-bottom: 20px; /* Space below the title section */
+    text-align: center; /* Center-align the title */
+    
+    
+  }
+  
+  /* Styles for the title */
+  .title-section h2 {
+    font-size: 24px; /* Adjust font size as needed */
+    margin: 0; /* Remove default margin */
+    font-size: 2.6vw;
+  }
+  
+  /* Styles for the row of divs */
+  .row-container {
+    display: flex; /* Use flexbox for layout */
+    justify-content: space-between; /* Distribute space evenly between the divs */
+    gap: 20px; /* Space between each child div */
+  }
+  
+  /* Styles for each child div in the row */
+  .row-item {
+    
+    padding: 20px; /* Padding inside each div */
+    border-radius: 8px; /* Optional rounded corners */
+    flex: 1; /* Allow it to grow and shrink equally */
+    text-align: center; /* Center-align text inside each div */
+    display: flex; /* Use flexbox for inner alignment */
+    flex-direction: column; /* Arrange children vertically */
+    align-items: center; /* Center items horizontally */
+    font-size: 2.6vw;
+  }
+  
+  /* Styles for the round image */
+  .row-item img {
+    width: 100px; /* Adjust size as needed */
+    height: 100px; /* Adjust size as needed */
+    border-radius: 50%; /* Make the image round */
+    object-fit: cover; /* Ensure the image covers the area */
+    margin-bottom: 10px; /* Space below the image */
+  }
+  
+  /* Styles for the title inside each item */
+  .row-item h3 {
+    font-family: 'Krona One', sans-serif;
+    font-size: 2vw;
+    margin: 10px 0; /* Space around the title */
+  }
+  
+  /* Styles for the text inside each item */
+  .row-item p {
+    font-family: 'Jura', sans-serif;
+    font-size: 1.7vw;
+    margin: 0; /* Remove default margin */
+  }

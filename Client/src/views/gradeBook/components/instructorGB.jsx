@@ -149,7 +149,7 @@ const InstructorGradeBook = ({ courseId, id }) => {
             dataSource={submitions}
             bordered
             title={() => {
-              return 'The Instructor GradeBook'
+              return 'The Company Admin GradeBook'
             }}
             pagination={false}
           />

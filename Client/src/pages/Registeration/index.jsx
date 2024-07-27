@@ -99,8 +99,8 @@ const Registeration = () => {
             </Form.Item>
             <Form.Item name="role">
               <Select prefix={<UserOutlined />} placeholder="role">
-                <Select.Option value="instructor">Instructor</Select.Option>
-                <Select.Option value="student">Student</Select.Option>
+                <Select.Option value="instructor">Company admin</Select.Option>
+                <Select.Option value="student">Employer</Select.Option>
               </Select>
             </Form.Item>
             <Form.Item

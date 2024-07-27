@@ -81,7 +81,7 @@ const CourseParticipants = () => {
                       )
                     }}
                   >
-                    Make instructor
+                    Make Company admin
                   </Button>
                 )}
                 {record.enrolledAs === 'instructor' && (
@@ -92,7 +92,7 @@ const CourseParticipants = () => {
                       dispatch(updatePrivilege(courseId, record.id, 'student'))
                     }}
                   >
-                    Make student
+                    Make Employer
                   </Button>
                 )}
                 {record.enrolledAs === 'admin' && '-'}

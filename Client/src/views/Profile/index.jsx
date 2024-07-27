@@ -102,7 +102,7 @@ const Profile = () => {
               title={user.name}
             />
           </div>
-          <h5 className="card-title">{'Role: ' + user.role}</h5>
+          <h5 className="card-title">{'Role: ' + ( user.role == 'instructor' ? "Company admin" : "Employer")}</h5>
           <h5 className="card-text">{'@' + user.username}</h5>
           <p className="card-text">
             {user.email}
