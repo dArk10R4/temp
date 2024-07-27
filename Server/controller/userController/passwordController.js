@@ -9,7 +9,7 @@ let transporter = nodemailer.createTransport({
   secure: true, // use SSL
   auth: {
     user: 'teset.tes@yandex.com', // your Yandex email address
-    pass: 'taudassjduucuhan' // your Yandex email password
+    pass: 'jxmzmjqvgnkvdssh' // your Yandex email password
   }
 })
 

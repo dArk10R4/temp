@@ -47,5 +47,11 @@ const changePassword = async (token, password) => {
   return response.data
 }
 
-const usersService = { register, login, logout, update, forgotPassword, reset, changePassword }
+const createCompaign = async (data) => {
+  console.log(data);
+  const response = await axios.post('/compaign', data,getAuthHeader())
+  return response.data
+}
+
+const usersService = { register, login, logout, update, forgotPassword, reset, changePassword, createCompaign }
 export default usersService

@@ -65,9 +65,9 @@ const SideNav = (props) => {
           <Menu.Item key="5">Place Holder 1</Menu.Item>
           <Menu.Item key="6">Place Holder 2</Menu.Item>
         </SubMenu> */}
-        {/* <Menu.Item key="/app/acheivements" icon={<CrownOutlined />}>
-          <NavLink to="/app/acheivements">Acheivements</NavLink>
-        </Menu.Item> */}
+        <Menu.Item key="/app/compaign" icon={<CrownOutlined />}>
+          <NavLink to="/app/compaign">Compaign</NavLink>
+        </Menu.Item>
         <Menu.Item key="/app/archives" icon={<HddOutlined />}>
           <NavLink to="/app/archives">Archives</NavLink>
         </Menu.Item>

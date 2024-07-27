@@ -1,9 +1,10 @@
 const express = require('express')
 const auth = require('../middleware/auth')
 const compaignRouter = express.Router({ mergeParams: true })
-const { getCompaign, createCompaign } = require('../controller/compaignController/compaignController')
+const { getCompaign, createCompaign, checkToken } = require('../controller/compaignController/compaignController')
 
-compaignRouter.get('/compaign', auth, getCompaign);
-compaignRouter.post('/compaign', auth, createCompaign);
+compaignRouter.get('/', auth, getCompaign);
+compaignRouter.post('/', auth, createCompaign);
+compaignRouter.get('/:token', checkToken);
 
 module.exports = compaignRouter

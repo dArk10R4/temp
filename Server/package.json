@@ -39,6 +39,7 @@
     "nodemailer": "^6.9.14",
     "password-hash": "^1.2.2",
     "socket.io": "^2.4.1",
+    "uuidv4": "^6.2.13",
     "validator": "^12.2.0",
     "web-push": "^3.4.4"
   },

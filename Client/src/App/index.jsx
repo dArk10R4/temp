@@ -51,6 +51,7 @@ import Archives from '../views/archives'
 import About from '../components/About/About.jsx'
 import MainPage from '../components/MainPaje/Main.jsx'
 import Compaign from '../pages/Compaign/index.jsx'
+import SimulationPage from '../pages/Simulation/SimulationPage.jsx'
 
 // public routes redirects to /app if authenticated
 // private routes redirects to login if not authenticated
@@ -215,6 +216,7 @@ const AuthnticatedApp = () => {
             <Route path="/app/profile" component={Profile} />
             <Route path="/app/archives" component={Archives} />
             <Route path="/app/acheivements" component={Achievements} />
+            <Route path="/app/simulation" component={SimulationPage} />
             <Route path="/app/*" component={NotFoundView} />
           </Switch>
         </Content>
