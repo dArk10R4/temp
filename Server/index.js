@@ -76,6 +76,7 @@ app.use('/courses/:courseId/modules', courseModule)
 app.use('/courses/:courseId/modules/:moduleId/module-item', courseModuleItem)
 app.use('/courses/:courseId/lectures', lectureRouter)
 app.use('/achievements', achievementsRouter)
+app.use('/compaign', require('./routes/compaignRouter'));
 
 const port = process.env.PORT || 4000
 app.listen(port, () => {
